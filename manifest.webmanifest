@@ -1,0 +1,31 @@
+{
+    "theme_color": "#6f6e6c",
+    "background_color": "#6f6e6c",
+    "display": "fullscreen",
+    "scope": "/",
+    "start_url": "/index.html",
+    "name": "STUK.CO",
+    "short_name": "STUK.CO",
+    "icons": [
+        {
+            "src": "/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "imgs/png"
+        },
+        {
+            "src": "/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "imgs/png"
+        },
+        {
+            "src": "/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "imgs/png"
+        },
+        {
+            "src": "/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "imgs/png"
+        }
+    ]
+}

@@ -69,3 +69,31 @@ function animate(timeAddOn) {
 }
 
 animate(0);
+
+function onLongPress(element, callback) {
+    let timer;
+  
+    element.addEventListener('touchstart', () => { 
+      timer = setTimeout(() => {
+        timer = null;
+        callback();
+      }, 2000);
+    });
+  
+    function cancel() {
+      clearTimeout(timer);
+    }
+  
+    element.addEventListener('touchend', cancel);
+    element.addEventListener('touchmove', cancel);
+  }
+
+  onLongPress(document.querySelector('.card-container'), () => {
+    console.log('Long pressed', element);
+    let name = prompt("Enter your name");
+    let number = prompt("Enter your personal number");
+    document.getElementById("name").innerText = name;
+    document.getElementById("nummer").innerText = number;
+
+
+  });
