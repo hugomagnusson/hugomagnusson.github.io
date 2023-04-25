@@ -1,11 +1,17 @@
 const cardContainer = document.querySelector('.card-container');
 const card = document.querySelector('.card');
 
+window.onload = () => {  
+    'use strict';     
+    if ('serviceWorker' in navigator) {     
+    navigator.serviceWorker  
+    .register('./sw.js'); 
+    } 
+    }
+
 card.addEventListener('click', function() {
   cardContainer.classList.toggle('active');
 });
-
-
 
 // Create an array to hold the image objects
 var imageObjects = [];
