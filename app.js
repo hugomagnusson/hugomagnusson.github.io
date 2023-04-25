@@ -24,7 +24,7 @@ for (var i = 0; i < 10; i++) {
   img.id = "img" + i;
   img.style.overflow = "hidden";
   img.style.position = "absolute";
-  img.style.scale = "10vw";
+  img.style.scale = "5vw";
 
   let offset = 200;
   let topedge = window.innerWidth+offset*2;
