@@ -51,14 +51,14 @@ html {
 
     backface-visibility: hidden;
     display: flex;
-    background-image: url(imgs/card-front.png);
+    background-image: url(imgs/gult-front.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
   
   .card-back {
     transform: rotateY(180deg);
-    background-image: url(imgs/card-back.png);
+    background-image: url(imgs/gult-back.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
@@ -67,8 +67,8 @@ html {
     text-align: start;
     writing-mode: vertical-rl;
     position: absolute;
-    top: 5.8%;
-    left: 33%;
+    top: 7.1%;
+    left: 14%;
     color: rgb(0, 0, 0);
     font-size: 4vw;
   }
@@ -77,8 +77,8 @@ html {
     text-align: start;
     writing-mode: vertical-rl;
     position: absolute;
-    top: 5.8%;
-    left: 28%;
+    top: 63%;
+    left: 13.5%;
     color: rgb(0, 0, 0);
     font-size: 4vw;
   }
@@ -97,6 +97,17 @@ html {
     width: 100%;
     padding-bottom: 16%;
     background-image: url(imgs/bottom-bar.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .dots {
+    position: absolute;
+    top: 1%;
+    left: 40%;
+    width: 20%;
+    padding-bottom: 7.2%;
+    background-image: url(imgs/dots.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
