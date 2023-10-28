@@ -84,6 +84,7 @@ html {
   }
 
   .bottom {
+    display: block;
     position: absolute;
     width: 100%;
     top: 85%;
@@ -111,3 +112,63 @@ html {
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
+
+
+
+
+
+.normal-card-front, .normal-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+
+    backface-visibility: hidden;
+    display: flex;
+    background-image: url(imgs/card-front.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.normal-card-back {
+  transform: rotateY(180deg);
+  background-image: url(imgs/card-back.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.normal-card-name {
+  text-align: start;
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 5.8%;
+  left: 33%;
+  color: rgb(0, 0, 0);
+  font-size: 4vw;
+}
+.normal-card-nummer {
+  text-align: start;
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 5.8%;
+  left: 28%;
+  color: rgb(0, 0, 0);
+  font-size: 4vw;
+}
+/* .bottom {
+  position: absolute;
+  width: 100%;
+  top: 85%;
+  padding-bottom: 100%;
+  background-color: #1c1c1c;
+}
+.bottom-bar {
+  position: relative;
+  top: 0%;
+  width: 100%;
+  padding-bottom: 16%;
+  background-image: url(imgs/bottom-bar.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+} */
